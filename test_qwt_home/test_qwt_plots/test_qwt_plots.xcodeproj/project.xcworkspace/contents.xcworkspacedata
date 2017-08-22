@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:xRue.xcodeproj">
+      location = "self:test_qwt_plots.xcodeproj">
    </FileRef>
 </Workspace>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "668A024A1F1FB61000724066"
-               BuildableName = "xRue"
-               BlueprintName = "xRue"
-               ReferencedContainer = "container:xRue.xcodeproj">
+               BlueprintIdentifier = "6694E7EA1F420786006807E3"
+               BuildableName = "test_qwt_plots"
+               BlueprintName = "test_qwt_plots"
+               ReferencedContainer = "container:test_qwt_plots.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "668A024A1F1FB61000724066"
-            BuildableName = "xRue"
-            BlueprintName = "xRue"
-            ReferencedContainer = "container:xRue.xcodeproj">
+            BlueprintIdentifier = "6694E7EA1F420786006807E3"
+            BuildableName = "test_qwt_plots"
+            BlueprintName = "test_qwt_plots"
+            ReferencedContainer = "container:test_qwt_plots.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "668A024A1F1FB61000724066"
-            BuildableName = "xRue"
-            BlueprintName = "xRue"
-            ReferencedContainer = "container:xRue.xcodeproj">
+            BlueprintIdentifier = "6694E7EA1F420786006807E3"
+            BuildableName = "test_qwt_plots"
+            BlueprintName = "test_qwt_plots"
+            ReferencedContainer = "container:test_qwt_plots.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "668A024A1F1FB61000724066"
-            BuildableName = "xRue"
-            BlueprintName = "xRue"
-            ReferencedContainer = "container:xRue.xcodeproj">
+            BlueprintIdentifier = "6694E7EA1F420786006807E3"
+            BuildableName = "test_qwt_plots"
+            BlueprintName = "test_qwt_plots"
+            ReferencedContainer = "container:test_qwt_plots.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
