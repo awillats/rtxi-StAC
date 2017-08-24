@@ -26,6 +26,7 @@ struct HMM {
         assert(A != NULL); assert(B != NULL); assert(PI != NULL);
     }
 
+
    friend int* viterbi(HMM const& hmm, const int observed[], const int n); 
 };
 
