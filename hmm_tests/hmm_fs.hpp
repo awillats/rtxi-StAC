@@ -16,6 +16,7 @@
 #include <cfloat>
 
 #include <vector>
+#include <algorithm>
 
 
 
@@ -27,6 +28,7 @@ struct HMM {
     
     //https://stackoverflow.com/questions/18795776/error-no-matching-function-for-call-to-when-constructing-an-unintialized-stru
     HMM(): states(2), events(2) { ;}; 
+
 
     HMM(int states, int events, double **A, double **B, double *PI):
     states(states), events(events), A(A), B(B), PI(PI) {
