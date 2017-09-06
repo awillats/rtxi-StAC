@@ -15,6 +15,8 @@
 //#include "../../../module_help/StAC_rtxi/hmm_tests/hmm_fs.hpp"
 
 
+
+
 int* viterbi(HMM const& hmm, const int observed[], const int n) {
     assert(n > 0); assert(observed != NULL);
     int *seq = new int[n];
@@ -95,4 +97,61 @@ int* viterbi(HMM const& hmm, const int observed[], const int n) {
     
     return seq;
 }
+
+
+/*
+void easyBuild(void)
+{
+
+//std::vector<double> vFr_, std::vector<double> vTr_, int nstates, int nemits)
+
+    std::vector<double> vFr = {0.1, 0.6};
+    
+    std::vector<double> vTr = {0.1, 0.1};
+    double A0[2] = {1-vTr[0], vTr[0]};
+    double A1[2] = {vTr[1], 1-vTr[1]};
+    double *A[2] = {A0, A1};
+    
+    double B0[2] = {1-vFr[0], vFr[0]};
+    double B1[2] = {1-vFr[1], vFr[1]};
+    double *B[2] = {B0, B1};
+
+    //ideally this would be the transition probabilities...?
+    double PI[2] = {.5,.5};
+
+    //HMM easy_hmm(2,2, A,B,PI);
+    //HMM easy_hmm(10);
+    //return easy_hmm;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

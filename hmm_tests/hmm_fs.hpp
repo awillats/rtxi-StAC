@@ -15,21 +15,28 @@
 #include <cmath>
 #include <cfloat>
 
+#include <vector>
+
+
+
+
 struct HMM {
     int states, events;
     double **A, **B;
     double *PI;
     
+    //https://stackoverflow.com/questions/18795776/error-no-matching-function-for-call-to-when-constructing-an-unintialized-stru
+    HMM(): states(2), events(2) { ;}; 
+
     HMM(int states, int events, double **A, double **B, double *PI):
     states(states), events(events), A(A), B(B), PI(PI) {
         assert(states > 0); assert(events > 0);
         assert(A != NULL); assert(B != NULL); assert(PI != NULL);
     }
 
+   friend std::vector<int> genStates(HMM const& hmm);
    friend int* viterbi(HMM const& hmm, const int observed[], const int n); 
 };
-
-
 
 
 
