@@ -13,9 +13,7 @@
 #include <stdio.h>
 #include <vector>
 #include <random>
-
-std::vector<int> genHMM(std::vector<double> frs, std::vector<double> trs, int numSteps);
-
+#include <tuple>
 
 struct HMM_Data
 {
@@ -23,7 +21,8 @@ struct HMM_Data
 };
 
 HMM_Data genHMM_Data(std::vector<double> frs, std::vector<double> trs, int numSteps);
-
+std::vector<int> genHMM_Spikes(std::vector<double> frs, std::vector<double> trs, int numSteps);
+//std::tuple<std::vector<int>, std::vector<int>> genHMM_Tie(std::vector<double> frs, std::vector<double> trs, int numSteps);
 #endif /* hmmFuns_hpp */
 
 
