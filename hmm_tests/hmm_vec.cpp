@@ -15,24 +15,32 @@
 //#include "../../../module_help/StAC_rtxi/hmm_tests/hmm_fs.hpp"
 
 
-
-
 int* viterbi(HMMv const& hmm, std::vector<int> observed, const int n) {
+   // printf("vit start vec");
     assert(n > 0); assert(!observed.empty());
+    //printf("vit start vec");
     int *seq = new int[n];
 
     for (int i = 0; i < n; i++) seq[i] = 0;
     double **prob = new double*[n];
     int **prevs = new int*[n];
+    
     for (int i = 0; i < n; i++) {
         prob[i] = new double[hmm.states];
         prevs[i] = new int[hmm.states];
-        for (int j = 0; j < hmm.states; j++) { //unnecessary
+        //printf("%i.",n); //fixes
+        //printf("x"); //insufficient
+        //i;
+        for (int j = 0; j < hmm.states; j++) { 
             prob[i][j] = 0;
             prevs[i][j] = 0;
+            
         }
     }
-    
+    //printf("\nearly check%i\n",n);
+    //prob[0][0]=0.0; //why does this fix things!??!
+        prob[0][0]=0.0;
+
     for (int i = 0; i < hmm.states; i++) {
         prob[0][i] = hmm.PI[i] * hmm.B[i][ observed[0] ];
     }
@@ -51,6 +59,7 @@ int* viterbi(HMMv const& hmm, std::vector<int> observed, const int n) {
         }
     }
     
+
     double pmax = 0; int dmax;
     for (int i = 0; i < hmm.states; i++) {
         if (prob[n-1][i] > pmax) {
@@ -64,7 +73,6 @@ int* viterbi(HMMv const& hmm, std::vector<int> observed, const int n) {
         seq[i] = prevs[i][ seq[i+1] ];
     }
     
-
     //////////////////////////////////////////////////////////check
     for (int i = 0; i < n; i++) {
         ////cout << "t = " << i << endl;
@@ -86,16 +94,25 @@ int* viterbi(HMMv const& hmm, std::vector<int> observed, const int n) {
 
     ////cout << endl;
     //////////////////////////////////////////////////////////
-        
-    
+       
+
+    // this is causing the crash
+    //need to delete array of arrays
+    // https://stackoverflow.com/questions/4193982/delete-a-pointer-to-pointer-as-array-of-arrays
+  //  printf("\n%i\n",n);
+
+        prob[0][0]=0.0;
     for (int i = 0; i < n; i++) {
         delete[] prob[i];
         delete[] prevs[i];
     }
+
+   // printf("lastlast\n");
     delete[] prob;
     delete[] prevs;
-    
+   
     return seq;
+    
 }
 
 

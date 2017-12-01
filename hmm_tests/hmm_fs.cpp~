@@ -15,11 +15,13 @@
 //#include "../../../module_help/StAC_rtxi/hmm_tests/hmm_fs.hpp"
 
 
-std::vector<int> getStates(HMM const& hmm){
-}
+
 
 int* viterbi(HMM const& hmm, const int observed[], const int n) {
+    print("vit hmm_fs");
     assert(n > 0); assert(observed != NULL);
+    
+    print("vit hmm_fs");
     int *seq = new int[n];
 
     for (int i = 0; i < n; i++) seq[i] = 0;
