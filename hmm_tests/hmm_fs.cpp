@@ -18,10 +18,10 @@
 
 
 int* viterbi(HMM const& hmm, const int observed[], const int n) {
-    print("vit hmm_fs");
+    printf("vit hmm_fs");
     assert(n > 0); assert(observed != NULL);
     
-    print("vit hmm_fs");
+    printf("vit hmm_fs");
     int *seq = new int[n];
 
     return seq;
@@ -130,7 +130,7 @@ void easyBuild(void)
     //return easy_hmm;
     */
 }
-*/
+
 
 
 
