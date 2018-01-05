@@ -16,10 +16,10 @@
 
 
 int* viterbi(HMMv const& hmm, std::vector<int> observed, const int n) {
-   // printf("vit start vec");
+    //printf("vit start vec");
     assert(n > 0); assert(!observed.empty());
     //printf("vit start vec");
-    int *seq = new int[n];
+    int *seq = new int[n];//holy cow, need to delete this memory
 
     for (int i = 0; i < n; i++) seq[i] = 0;
     double **prob = new double*[n];
@@ -95,13 +95,13 @@ int* viterbi(HMMv const& hmm, std::vector<int> observed, const int n) {
     ////cout << endl;
     //////////////////////////////////////////////////////////
        
-
+//following comments are old, not sure if still apply
     // this is causing the crash
     //need to delete array of arrays
     // https://stackoverflow.com/questions/4193982/delete-a-pointer-to-pointer-as-array-of-arrays
   //  printf("\n%i\n",n);
 
-        prob[0][0]=0.0;
+        prob[0][0]=0.0; //delete?
     for (int i = 0; i < n; i++) {
         delete[] prob[i];
         delete[] prevs[i];
