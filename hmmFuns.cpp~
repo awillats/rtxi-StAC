@@ -24,6 +24,7 @@ HMM_Data genHMM_Data(vector<double> frs, vector<double> trs, int numSteps){
     mt19937 gen(rd());
     uniform_real_distribution<double> unif(0, 1);
 
+    
     for (int i=0; i<numSteps; i++){
         //get emiss
         //get transit
