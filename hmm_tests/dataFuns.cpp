@@ -11,8 +11,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
-using namespace std;
+//using namespace std;
 //Overloaded << operator to print out vectors!
 // not sure how to put this in a separate cpp file... how to do a forward declaration for this
-
 

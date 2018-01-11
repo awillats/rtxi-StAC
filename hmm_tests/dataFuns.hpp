@@ -12,13 +12,13 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
-using namespace std;
+//using namespace std;
 
 
 //NOTE: this bad programming practice, surely this must go into the cpp??
 //but can't get it to compile that way
 template<typename T>
-ostream& operator<< (ostream& out, const vector<T>& v) {
+std::ostream& operator<< (std::ostream& out, const std::vector<T>& v) {
     out << "[";
     size_t last = v.size() - 1;
     for(size_t i = 0; i < v.size(); ++i) {
@@ -29,4 +29,7 @@ ostream& operator<< (ostream& out, const vector<T>& v) {
     out << "]";
     return out;
 }
+
+//std::vector<double> pullParamLine(std::ifstream&);
+
 #endif /* dataFuns_hpp */
