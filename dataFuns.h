@@ -1,6 +1,6 @@
 
-#ifndef DATA_FUNS.H
-#define DATA_FUNS.H
+#ifndef DATA_FUNS
+#define DATA_FUNS
 
 #include <vector>
 #include <iostream>
