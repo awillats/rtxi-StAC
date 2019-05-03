@@ -33,3 +33,60 @@ std::vector<double> pullParamLine(std::ifstream& paramFile)
 	return nums;
 }
 
+std::vector<double> Eigen2stdVec(Eigen::Vector2d x_evec)
+{
+    std::vector<double>x_std(x_evec.data(),x_evec.data()+x_evec.size());
+    return x_std;
+
+}
+
+
+//could certainly replace these with one function with a type template: 
+//http://www.cplusplus.com/doc/tutorial/functions2/
+Eigen::Matrix2d stdVec2EigenM(std::vector<double> dataVec, int nrows, int ncols)
+{
+	Eigen::Map<Eigen::Matrix2d> EigMat(dataVec.data(),nrows,ncols);
+	return EigMat;
+}
+
+Eigen::Vector2d stdVec2EigenV(std::vector<double> dataVec, int nrows)
+{
+	Eigen::Map<Eigen::Vector2d> EigMat(dataVec.data(),nrows,1);
+	return EigMat;
+}
+
+Eigen::RowVector2d stdVec2EigenRV(std::vector<double> dataVec, int ncols)
+{
+	Eigen::Map<Eigen::RowVector2d> EigMat(dataVec.data(),1,ncols);
+	return EigMat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
