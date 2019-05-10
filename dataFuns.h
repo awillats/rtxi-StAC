@@ -10,6 +10,7 @@
 
 #include "../eigen/Eigen/Dense"
 
+double pullParamNum(std::ifstream&);
 std::vector<double> pullParamLine(std::ifstream&);
 std::vector<double> Eigen2stdVec(Eigen::Vector2d);
 
