@@ -1,0 +1,137 @@
+<RTXI class="settings" version="2.2">
+ <OBJECT id="0" component="rt">
+  <PARAM name="Period">1000000</PARAM>
+ </OBJECT>
+ <OBJECT id="1" component="io">
+  <PARAM name="0 Destination ID">11</PARAM>
+  <PARAM name="0 Destination channel">0</PARAM>
+  <PARAM name="0 Source ID">13</PARAM>
+  <PARAM name="0 Source channel">0</PARAM>
+  <PARAM name="1 Destination ID">12</PARAM>
+  <PARAM name="1 Destination channel">0</PARAM>
+  <PARAM name="1 Source ID">13</PARAM>
+  <PARAM name="1 Source channel">0</PARAM>
+  <PARAM name="2 Destination ID">12</PARAM>
+  <PARAM name="2 Destination channel">1</PARAM>
+  <PARAM name="2 Source ID">11</PARAM>
+  <PARAM name="2 Source channel">0</PARAM>
+  <PARAM name="3 Destination ID">13</PARAM>
+  <PARAM name="3 Destination channel">0</PARAM>
+  <PARAM name="3 Source ID">12</PARAM>
+  <PARAM name="3 Source channel">3</PARAM>
+  <PARAM name="4 Destination ID">13</PARAM>
+  <PARAM name="4 Destination channel">1</PARAM>
+  <PARAM name="4 Source ID">14</PARAM>
+  <PARAM name="4 Source channel">0</PARAM>
+  <PARAM name="Num Links">5</PARAM>
+ </OBJECT>
+ <OBJECT id="2" library="analogy_driver.so" component="plugin">
+  <PARAM name="Num Devices">0</PARAM>
+ </OBJECT>
+ <OBJECT id="3" library="model_loader.so" component="plugin"/>
+ <OBJECT id="4" library="module_installer.so" component="plugin"/>
+ <OBJECT id="5" library="system_control.so" component="plugin"/>
+ <OBJECT id="6" library="oscilloscope.so" component="plugin">
+  <PARAM name="Num Panels">1</PARAM>
+  <OBJECT name="0" id="15">
+   <PARAM name="0 ID">13</PARAM>
+   <PARAM name="0 index">0</PARAM>
+   <PARAM name="0 offset">20</PARAM>
+   <PARAM name="0 pen color">#0075dc</PARAM>
+   <PARAM name="0 pen style">1</PARAM>
+   <PARAM name="0 pen width">1</PARAM>
+   <PARAM name="0 scale">10</PARAM>
+   <PARAM name="0 type">2</PARAM>
+   <PARAM name="1 ID">11</PARAM>
+   <PARAM name="1 index">0</PARAM>
+   <PARAM name="1 offset">-1</PARAM>
+   <PARAM name="1 pen color">#ff0010</PARAM>
+   <PARAM name="1 pen style">1</PARAM>
+   <PARAM name="1 pen width">1</PARAM>
+   <PARAM name="1 scale">1</PARAM>
+   <PARAM name="1 type">2</PARAM>
+   <PARAM name="2 ID">14</PARAM>
+   <PARAM name="2 index">0</PARAM>
+   <PARAM name="2 offset">-1</PARAM>
+   <PARAM name="2 pen color">#2bce48</PARAM>
+   <PARAM name="2 pen style">2</PARAM>
+   <PARAM name="2 pen width">2</PARAM>
+   <PARAM name="2 scale">1</PARAM>
+   <PARAM name="2 type">2</PARAM>
+   <PARAM name="3 ID">12</PARAM>
+   <PARAM name="3 index">0</PARAM>
+   <PARAM name="3 offset">-0.8</PARAM>
+   <PARAM name="3 pen color">#ffa405</PARAM>
+   <PARAM name="3 pen style">3</PARAM>
+   <PARAM name="3 pen width">2</PARAM>
+   <PARAM name="3 scale">1</PARAM>
+   <PARAM name="3 type">2</PARAM>
+   <PARAM name="DivT">1000</PARAM>
+   <PARAM name="DivX">10</PARAM>
+   <PARAM name="DivY">10</PARAM>
+   <PARAM name="H">572</PARAM>
+   <PARAM name="Num Channels">4</PARAM>
+   <PARAM name="Paused">0</PARAM>
+   <PARAM name="Refresh">250</PARAM>
+   <PARAM name="Size">10001</PARAM>
+   <PARAM name="W">813</PARAM>
+   <PARAM name="X">224</PARAM>
+   <PARAM name="Y">0</PARAM>
+  </OBJECT>
+ </OBJECT>
+ <OBJECT id="7" library="data_recorder.so" component="plugin">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT id="8" library="connector.so" component="plugin"/>
+ <OBJECT id="9" library="performance_measurement.so" component="plugin"/>
+ <OBJECT id="10" library="userprefs.so" component="plugin"/>
+ <OBJECT id="11" library="ss_plant.so" component="plugin">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space plant"></PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">344</PARAM>
+  <PARAM name="Y">188</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+ <OBJECT id="12" library="ss_obsv.so" component="plugin">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space plant"></PARAM>
+  <PARAM name="W">335</PARAM>
+  <PARAM name="X">194</PARAM>
+  <PARAM name="Y">448</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+ <OBJECT id="13" library="ss_ctrl.so" component="plugin">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space controller"></PARAM>
+  <PARAM name="W">323</PARAM>
+  <PARAM name="X">12</PARAM>
+  <PARAM name="Y">192</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+ <OBJECT id="14" library="signal_generator.so" component="plugin">
+  <PARAM name="Amplitude (V)">1</PARAM>
+  <PARAM name="Delay (s)">1</PARAM>
+  <PARAM name="Freq (Hz)">1</PARAM>
+  <PARAM name="H">338</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="Width (s)">1</PARAM>
+  <PARAM name="X">0</PARAM>
+  <PARAM name="Y">0</PARAM>
+  <PARAM name="ZAP duration (s)">10</PARAM>
+  <PARAM name="ZAP max Freq (Hz)">20</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+ <OBJECT id="16" library="hmm_generator.so" component="plugin">
+  <PARAM name="Debug label">10.3</PARAM>
+  <PARAM name="FR 1">1</PARAM>
+  <PARAM name="FR 2">20</PARAM>
+  <PARAM name="H">310</PARAM>
+  <PARAM name="TR 1">0.4</PARAM>
+  <PARAM name="TR 2">0.4</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">186</PARAM>
+  <PARAM name="Y">168</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+</RTXI>

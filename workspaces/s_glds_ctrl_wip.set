@@ -1,0 +1,72 @@
+<RTXI version="2.2" class="settings">
+ <OBJECT component="rt" id="0">
+  <PARAM name="Period">1000000</PARAM>
+ </OBJECT>
+ <OBJECT component="io" id="1">
+  <PARAM name="Num Links">0</PARAM>
+ </OBJECT>
+ <OBJECT library="analogy_driver.so" component="plugin" id="2">
+  <PARAM name="Num Devices">0</PARAM>
+ </OBJECT>
+ <OBJECT library="model_loader.so" component="plugin" id="3"/>
+ <OBJECT library="module_installer.so" component="plugin" id="4"/>
+ <OBJECT library="system_control.so" component="plugin" id="5"/>
+ <OBJECT library="oscilloscope.so" component="plugin" id="6">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT library="data_recorder.so" component="plugin" id="7">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT library="connector.so" component="plugin" id="8"/>
+ <OBJECT library="performance_measurement.so" component="plugin" id="9"/>
+ <OBJECT library="userprefs.so" component="plugin" id="10"/>
+ <OBJECT library="ss_obsv.so" component="plugin" id="11">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space plant"></PARAM>
+  <PARAM name="W">335</PARAM>
+  <PARAM name="X">386</PARAM>
+  <PARAM name="Y">438</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT library="ss_ctrl.so" component="plugin" id="12">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space controller"></PARAM>
+  <PARAM name="W">323</PARAM>
+  <PARAM name="X">238</PARAM>
+  <PARAM name="Y">204</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT library="ss_plant.so" component="plugin" id="13">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space plant"></PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">518</PARAM>
+  <PARAM name="Y">208</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT library="hmm_generator.so" component="plugin" id="14">
+  <PARAM name="Debug label">10.3</PARAM>
+  <PARAM name="FR 1">1</PARAM>
+  <PARAM name="FR 2">20</PARAM>
+  <PARAM name="H">226</PARAM>
+  <PARAM name="TR 1">0.4</PARAM>
+  <PARAM name="TR 2">0.4</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">414</PARAM>
+  <PARAM name="Y">0</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT library="signal_generator.so" component="plugin" id="15">
+  <PARAM name="Amplitude (V)">1</PARAM>
+  <PARAM name="Delay (s)">1</PARAM>
+  <PARAM name="Freq (Hz)">1</PARAM>
+  <PARAM name="H">338</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="Width (s)">1</PARAM>
+  <PARAM name="X">-16</PARAM>
+  <PARAM name="Y">116</PARAM>
+  <PARAM name="ZAP duration (s)">10</PARAM>
+  <PARAM name="ZAP max Freq (Hz)">20</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+</RTXI>
