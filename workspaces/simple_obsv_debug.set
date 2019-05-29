@@ -11,21 +11,25 @@
   <PARAM name="1 Destination channel">1</PARAM>
   <PARAM name="1 Source ID">12</PARAM>
   <PARAM name="1 Source channel">1</PARAM>
-  <PARAM name="2 Destination ID">12</PARAM>
-  <PARAM name="2 Destination channel">0</PARAM>
-  <PARAM name="2 Source ID">13</PARAM>
-  <PARAM name="2 Source channel">0</PARAM>
-  <PARAM name="Num Links">3</PARAM>
+  <PARAM name="2 Destination ID">11</PARAM>
+  <PARAM name="2 Destination channel">2</PARAM>
+  <PARAM name="2 Source ID">12</PARAM>
+  <PARAM name="2 Source channel">4</PARAM>
+  <PARAM name="3 Destination ID">12</PARAM>
+  <PARAM name="3 Destination channel">0</PARAM>
+  <PARAM name="3 Source ID">13</PARAM>
+  <PARAM name="3 Source channel">0</PARAM>
+  <PARAM name="Num Links">4</PARAM>
  </OBJECT>
- <OBJECT id="2" library="analogy_driver.so" component="plugin">
+ <OBJECT library="analogy_driver.so" id="2" component="plugin">
   <PARAM name="Num Devices">0</PARAM>
  </OBJECT>
- <OBJECT id="3" library="model_loader.so" component="plugin"/>
- <OBJECT id="4" library="module_installer.so" component="plugin"/>
- <OBJECT id="5" library="system_control.so" component="plugin"/>
- <OBJECT id="6" library="oscilloscope.so" component="plugin">
+ <OBJECT library="model_loader.so" id="3" component="plugin"/>
+ <OBJECT library="module_installer.so" id="4" component="plugin"/>
+ <OBJECT library="system_control.so" id="5" component="plugin"/>
+ <OBJECT library="oscilloscope.so" id="6" component="plugin">
   <PARAM name="Num Panels">1</PARAM>
-  <OBJECT name="0" id="14">
+  <OBJECT id="14" name="0">
    <PARAM name="0 ID">12</PARAM>
    <PARAM name="0 index">1</PARAM>
    <PARAM name="0 offset">0.5</PARAM>
@@ -61,7 +65,7 @@
    <PARAM name="4 ID">12</PARAM>
    <PARAM name="4 index">4</PARAM>
    <PARAM name="4 offset">-3</PARAM>
-   <PARAM name="4 pen color">#535154</PARAM>
+   <PARAM name="4 pen color">#ffa405</PARAM>
    <PARAM name="4 pen style">1</PARAM>
    <PARAM name="4 pen width">1</PARAM>
    <PARAM name="4 scale">1</PARAM>
@@ -74,26 +78,42 @@
    <PARAM name="5 pen width">1</PARAM>
    <PARAM name="5 scale">1</PARAM>
    <PARAM name="5 type">2</PARAM>
+   <PARAM name="6 ID">12</PARAM>
+   <PARAM name="6 index">3</PARAM>
+   <PARAM name="6 offset">0.04</PARAM>
+   <PARAM name="6 pen color">#ffa405</PARAM>
+   <PARAM name="6 pen style">1</PARAM>
+   <PARAM name="6 pen width">2</PARAM>
+   <PARAM name="6 scale">0.02</PARAM>
+   <PARAM name="6 type">2</PARAM>
+   <PARAM name="7 ID">11</PARAM>
+   <PARAM name="7 index">4</PARAM>
+   <PARAM name="7 offset">0.04</PARAM>
+   <PARAM name="7 pen color">#535154</PARAM>
+   <PARAM name="7 pen style">1</PARAM>
+   <PARAM name="7 pen width">1</PARAM>
+   <PARAM name="7 scale">0.02</PARAM>
+   <PARAM name="7 type">2</PARAM>
    <PARAM name="DivT">1000</PARAM>
    <PARAM name="DivX">10</PARAM>
    <PARAM name="DivY">10</PARAM>
-   <PARAM name="H">422</PARAM>
-   <PARAM name="Num Channels">6</PARAM>
+   <PARAM name="H">600</PARAM>
+   <PARAM name="Num Channels">8</PARAM>
    <PARAM name="Paused">0</PARAM>
    <PARAM name="Refresh">250</PARAM>
    <PARAM name="Size">10001</PARAM>
-   <PARAM name="W">757</PARAM>
-   <PARAM name="X">40</PARAM>
-   <PARAM name="Y">112</PARAM>
+   <PARAM name="W">1052</PARAM>
+   <PARAM name="X">28</PARAM>
+   <PARAM name="Y">28</PARAM>
   </OBJECT>
  </OBJECT>
- <OBJECT id="7" library="data_recorder.so" component="plugin">
+ <OBJECT library="data_recorder.so" id="7" component="plugin">
   <PARAM name="Num Panels">0</PARAM>
  </OBJECT>
- <OBJECT id="8" library="connector.so" component="plugin"/>
- <OBJECT id="9" library="performance_measurement.so" component="plugin"/>
- <OBJECT id="10" library="userprefs.so" component="plugin"/>
- <OBJECT id="11" library="ss_obsv.so" component="plugin">
+ <OBJECT library="connector.so" id="8" component="plugin"/>
+ <OBJECT library="performance_measurement.so" id="9" component="plugin"/>
+ <OBJECT library="userprefs.so" id="10" component="plugin"/>
+ <OBJECT library="ss_obsv.so" id="11" component="plugin">
   <PARAM name="H">226</PARAM>
   <PARAM name="State-space plant"></PARAM>
   <PARAM name="W">335</PARAM>
@@ -101,7 +121,7 @@
   <PARAM name="Y">86</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
- <OBJECT id="12" library="ss_plant.so" component="plugin">
+ <OBJECT library="ss_plant.so" id="12" component="plugin">
   <PARAM name="H">226</PARAM>
   <PARAM name="State-space plant"></PARAM>
   <PARAM name="W">294</PARAM>
@@ -109,8 +129,8 @@
   <PARAM name="Y">84</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
- <OBJECT id="13" library="signal_generator.so" component="plugin">
-  <PARAM name="Amplitude (V)">10</PARAM>
+ <OBJECT library="signal_generator.so" id="13" component="plugin">
+  <PARAM name="Amplitude (V)">20</PARAM>
   <PARAM name="Delay (s)">1</PARAM>
   <PARAM name="Freq (Hz)">1</PARAM>
   <PARAM name="H">338</PARAM>

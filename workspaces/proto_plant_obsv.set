@@ -1,0 +1,52 @@
+<RTXI version="2.2" class="settings">
+ <OBJECT component="rt" id="0">
+  <PARAM name="Period">1000000</PARAM>
+ </OBJECT>
+ <OBJECT component="io" id="1">
+  <PARAM name="Num Links">0</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" id="2" library="analogy_driver.so">
+  <PARAM name="Num Devices">0</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" id="3" library="model_loader.so"/>
+ <OBJECT component="plugin" id="4" library="module_installer.so"/>
+ <OBJECT component="plugin" id="5" library="system_control.so"/>
+ <OBJECT component="plugin" id="6" library="oscilloscope.so">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" id="7" library="data_recorder.so">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" id="8" library="connector.so"/>
+ <OBJECT component="plugin" id="9" library="performance_measurement.so"/>
+ <OBJECT component="plugin" id="10" library="userprefs.so"/>
+ <OBJECT component="plugin" id="11" library="ss_plant.so">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space plant"></PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">574</PARAM>
+  <PARAM name="Y">112</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" id="12" library="ss_obsv.so">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space plant"></PARAM>
+  <PARAM name="W">335</PARAM>
+  <PARAM name="X">382</PARAM>
+  <PARAM name="Y">360</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" id="14" library="signal_generator.so">
+  <PARAM name="Amplitude (V)">1</PARAM>
+  <PARAM name="Delay (s)">1</PARAM>
+  <PARAM name="Freq (Hz)">1</PARAM>
+  <PARAM name="H">338</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="Width (s)">1</PARAM>
+  <PARAM name="X">0</PARAM>
+  <PARAM name="Y">0</PARAM>
+  <PARAM name="ZAP duration (s)">10</PARAM>
+  <PARAM name="ZAP max Freq (Hz)">20</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+</RTXI>

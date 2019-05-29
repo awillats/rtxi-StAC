@@ -5,37 +5,29 @@
  <OBJECT component="io" id="1">
   <PARAM name="0 Destination ID">11</PARAM>
   <PARAM name="0 Destination channel">0</PARAM>
-  <PARAM name="0 Source ID">12</PARAM>
+  <PARAM name="0 Source ID">13</PARAM>
   <PARAM name="0 Source channel">0</PARAM>
   <PARAM name="1 Destination ID">11</PARAM>
   <PARAM name="1 Destination channel">1</PARAM>
-  <PARAM name="1 Source ID">13</PARAM>
+  <PARAM name="1 Source ID">12</PARAM>
   <PARAM name="1 Source channel">2</PARAM>
   <PARAM name="2 Destination ID">11</PARAM>
-  <PARAM name="2 Destination channel">3</PARAM>
-  <PARAM name="2 Source ID">14</PARAM>
-  <PARAM name="2 Source channel">1</PARAM>
-  <PARAM name="3 Destination ID">12</PARAM>
-  <PARAM name="3 Destination channel">0</PARAM>
-  <PARAM name="3 Source ID">11</PARAM>
-  <PARAM name="3 Source channel">7</PARAM>
+  <PARAM name="2 Destination channel">2</PARAM>
+  <PARAM name="2 Source ID">12</PARAM>
+  <PARAM name="2 Source channel">6</PARAM>
+  <PARAM name="3 Destination ID">11</PARAM>
+  <PARAM name="3 Destination channel">3</PARAM>
+  <PARAM name="3 Source ID">15</PARAM>
+  <PARAM name="3 Source channel">0</PARAM>
   <PARAM name="4 Destination ID">12</PARAM>
-  <PARAM name="4 Destination channel">1</PARAM>
-  <PARAM name="4 Source ID">15</PARAM>
+  <PARAM name="4 Destination channel">0</PARAM>
+  <PARAM name="4 Source ID">13</PARAM>
   <PARAM name="4 Source channel">0</PARAM>
   <PARAM name="5 Destination ID">12</PARAM>
   <PARAM name="5 Destination channel">2</PARAM>
-  <PARAM name="5 Source ID">14</PARAM>
-  <PARAM name="5 Source channel">1</PARAM>
-  <PARAM name="6 Destination ID">13</PARAM>
-  <PARAM name="6 Destination channel">0</PARAM>
-  <PARAM name="6 Source ID">12</PARAM>
-  <PARAM name="6 Source channel">0</PARAM>
-  <PARAM name="7 Destination ID">13</PARAM>
-  <PARAM name="7 Destination channel">2</PARAM>
-  <PARAM name="7 Source ID">14</PARAM>
-  <PARAM name="7 Source channel">1</PARAM>
-  <PARAM name="Num Links">8</PARAM>
+  <PARAM name="5 Source ID">15</PARAM>
+  <PARAM name="5 Source channel">0</PARAM>
+  <PARAM name="Num Links">6</PARAM>
  </OBJECT>
  <OBJECT component="plugin" id="2" library="analogy_driver.so">
   <PARAM name="Num Devices">0</PARAM>
@@ -45,58 +37,74 @@
  <OBJECT component="plugin" id="5" library="system_control.so"/>
  <OBJECT component="plugin" id="6" library="oscilloscope.so">
   <PARAM name="Num Panels">1</PARAM>
-  <OBJECT name="0" id="16">
+  <OBJECT id="14" name="0">
    <PARAM name="0 ID">12</PARAM>
-   <PARAM name="0 index">0</PARAM>
-   <PARAM name="0 offset">10</PARAM>
-   <PARAM name="0 pen color">#0075dc</PARAM>
-   <PARAM name="0 pen style">1</PARAM>
-   <PARAM name="0 pen width">2</PARAM>
-   <PARAM name="0 scale">10</PARAM>
+   <PARAM name="0 index">1</PARAM>
+   <PARAM name="0 offset">0.5</PARAM>
+   <PARAM name="0 pen color">#535154</PARAM>
+   <PARAM name="0 pen style">3</PARAM>
+   <PARAM name="0 pen width">1</PARAM>
+   <PARAM name="0 scale">1</PARAM>
    <PARAM name="0 type">2</PARAM>
-   <PARAM name="1 ID">13</PARAM>
-   <PARAM name="1 index">2</PARAM>
-   <PARAM name="1 offset">-2</PARAM>
-   <PARAM name="1 pen color">#535154</PARAM>
+   <PARAM name="1 ID">11</PARAM>
+   <PARAM name="1 index">1</PARAM>
+   <PARAM name="1 offset">-0.1</PARAM>
+   <PARAM name="1 pen color">#ff0010</PARAM>
    <PARAM name="1 pen style">1</PARAM>
-   <PARAM name="1 pen width">2</PARAM>
+   <PARAM name="1 pen width">4</PARAM>
    <PARAM name="1 scale">1</PARAM>
    <PARAM name="1 type">2</PARAM>
-   <PARAM name="2 ID">14</PARAM>
-   <PARAM name="2 index">1</PARAM>
-   <PARAM name="2 offset">3</PARAM>
+   <PARAM name="2 ID">11</PARAM>
+   <PARAM name="2 index">3</PARAM>
+   <PARAM name="2 offset">1</PARAM>
    <PARAM name="2 pen color">#ffa405</PARAM>
    <PARAM name="2 pen style">1</PARAM>
-   <PARAM name="2 pen width">5</PARAM>
+   <PARAM name="2 pen width">1</PARAM>
    <PARAM name="2 scale">1</PARAM>
    <PARAM name="2 type">2</PARAM>
    <PARAM name="3 ID">15</PARAM>
    <PARAM name="3 index">0</PARAM>
-   <PARAM name="3 offset">-2</PARAM>
+   <PARAM name="3 offset">-5</PARAM>
    <PARAM name="3 pen color">#2bce48</PARAM>
    <PARAM name="3 pen style">1</PARAM>
-   <PARAM name="3 pen width">3</PARAM>
+   <PARAM name="3 pen width">5</PARAM>
    <PARAM name="3 scale">1</PARAM>
    <PARAM name="3 type">2</PARAM>
-   <PARAM name="4 ID">11</PARAM>
+   <PARAM name="4 ID">12</PARAM>
    <PARAM name="4 index">2</PARAM>
-   <PARAM name="4 offset">-2.2</PARAM>
-   <PARAM name="4 pen color">#ff0010</PARAM>
+   <PARAM name="4 offset">-2</PARAM>
+   <PARAM name="4 pen color">#b266ff</PARAM>
    <PARAM name="4 pen style">1</PARAM>
    <PARAM name="4 pen width">1</PARAM>
    <PARAM name="4 scale">1</PARAM>
    <PARAM name="4 type">2</PARAM>
+   <PARAM name="5 ID">11</PARAM>
+   <PARAM name="5 index">2</PARAM>
+   <PARAM name="5 offset">-2</PARAM>
+   <PARAM name="5 pen color">#0075dc</PARAM>
+   <PARAM name="5 pen style">1</PARAM>
+   <PARAM name="5 pen width">1</PARAM>
+   <PARAM name="5 scale">1</PARAM>
+   <PARAM name="5 type">2</PARAM>
+   <PARAM name="6 ID">11</PARAM>
+   <PARAM name="6 index">5</PARAM>
+   <PARAM name="6 offset">-2.5</PARAM>
+   <PARAM name="6 pen color">#00998f</PARAM>
+   <PARAM name="6 pen style">1</PARAM>
+   <PARAM name="6 pen width">3</PARAM>
+   <PARAM name="6 scale">1</PARAM>
+   <PARAM name="6 type">2</PARAM>
    <PARAM name="DivT">1000</PARAM>
    <PARAM name="DivX">10</PARAM>
    <PARAM name="DivY">10</PARAM>
-   <PARAM name="H">422</PARAM>
-   <PARAM name="Num Channels">5</PARAM>
+   <PARAM name="H">460</PARAM>
+   <PARAM name="Num Channels">7</PARAM>
    <PARAM name="Paused">0</PARAM>
    <PARAM name="Refresh">250</PARAM>
    <PARAM name="Size">10001</PARAM>
-   <PARAM name="W">960</PARAM>
-   <PARAM name="X">130</PARAM>
-   <PARAM name="Y">56</PARAM>
+   <PARAM name="W">1012</PARAM>
+   <PARAM name="X">20</PARAM>
+   <PARAM name="Y">0</PARAM>
   </OBJECT>
  </OBJECT>
  <OBJECT component="plugin" id="7" library="data_recorder.so">
@@ -109,36 +117,30 @@
   <PARAM name="H">226</PARAM>
   <PARAM name="State-space plant"></PARAM>
   <PARAM name="W">335</PARAM>
-  <PARAM name="X">424</PARAM>
-  <PARAM name="Y">406</PARAM>
+  <PARAM name="X">0</PARAM>
+  <PARAM name="Y">488</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
- <OBJECT component="plugin" id="12" library="ss_ctrl.so">
+ <OBJECT component="plugin" id="12" library="ss_plant.so">
   <PARAM name="H">226</PARAM>
-  <PARAM name="State-space controller"></PARAM>
-  <PARAM name="W">323</PARAM>
-  <PARAM name="X">136</PARAM>
-  <PARAM name="Y">92</PARAM>
-  <PARAM name="paused">0</PARAM>
- </OBJECT>
- <OBJECT component="plugin" id="13" library="ss_plant.so">
-  <PARAM name="H">226</PARAM>
+  <PARAM name="Minimized">1</PARAM>
   <PARAM name="State-space plant"></PARAM>
   <PARAM name="W">294</PARAM>
-  <PARAM name="X">524</PARAM>
-  <PARAM name="Y">52</PARAM>
+  <PARAM name="X">0</PARAM>
+  <PARAM name="Y">445</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
- <OBJECT component="plugin" id="14" library="hmm_generator.so">
-  <PARAM name="Debug label">10.3</PARAM>
-  <PARAM name="FR 1">1</PARAM>
-  <PARAM name="FR 2">20</PARAM>
-  <PARAM name="H">310</PARAM>
-  <PARAM name="TR 1">0.4</PARAM>
-  <PARAM name="TR 2">0.4</PARAM>
+ <OBJECT component="plugin" id="13" library="signal_generator.so">
+  <PARAM name="Amplitude (V)">20</PARAM>
+  <PARAM name="Delay (s)">1</PARAM>
+  <PARAM name="Freq (Hz)">1</PARAM>
+  <PARAM name="H">338</PARAM>
   <PARAM name="W">294</PARAM>
-  <PARAM name="X">4</PARAM>
-  <PARAM name="Y">4</PARAM>
+  <PARAM name="Width (s)">1</PARAM>
+  <PARAM name="X">0</PARAM>
+  <PARAM name="Y">0</PARAM>
+  <PARAM name="ZAP duration (s)">10</PARAM>
+  <PARAM name="ZAP max Freq (Hz)">20</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
  <OBJECT component="plugin" id="15" library="signal_generator.so">
@@ -148,8 +150,8 @@
   <PARAM name="H">338</PARAM>
   <PARAM name="W">294</PARAM>
   <PARAM name="Width (s)">1</PARAM>
-  <PARAM name="X">12</PARAM>
-  <PARAM name="Y">254</PARAM>
+  <PARAM name="X">2</PARAM>
+  <PARAM name="Y">320</PARAM>
   <PARAM name="ZAP duration (s)">10</PARAM>
   <PARAM name="ZAP max Freq (Hz)">20</PARAM>
   <PARAM name="paused">0</PARAM>

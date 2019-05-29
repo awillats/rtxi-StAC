@@ -1,0 +1,60 @@
+<RTXI class="settings" version="2.2">
+ <OBJECT id="0" component="rt">
+  <PARAM name="Period">1000000</PARAM>
+ </OBJECT>
+ <OBJECT id="1" component="io">
+  <PARAM name="Num Links">0</PARAM>
+ </OBJECT>
+ <OBJECT library="analogy_driver.so" id="2" component="plugin">
+  <PARAM name="Num Devices">0</PARAM>
+ </OBJECT>
+ <OBJECT library="model_loader.so" id="3" component="plugin"/>
+ <OBJECT library="module_installer.so" id="4" component="plugin"/>
+ <OBJECT library="system_control.so" id="5" component="plugin"/>
+ <OBJECT library="oscilloscope.so" id="6" component="plugin">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT library="data_recorder.so" id="7" component="plugin">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT library="connector.so" id="8" component="plugin"/>
+ <OBJECT library="performance_measurement.so" id="9" component="plugin"/>
+ <OBJECT library="userprefs.so" id="10" component="plugin"/>
+ <OBJECT library="ss_plant.so" id="11" component="plugin">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space plant"></PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">574</PARAM>
+  <PARAM name="Y">112</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT library="ss_obsv.so" id="12" component="plugin">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space plant"></PARAM>
+  <PARAM name="W">335</PARAM>
+  <PARAM name="X">382</PARAM>
+  <PARAM name="Y">360</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT library="ss_ctrl.so" id="13" component="plugin">
+  <PARAM name="H">226</PARAM>
+  <PARAM name="State-space controller"></PARAM>
+  <PARAM name="W">323</PARAM>
+  <PARAM name="X">239</PARAM>
+  <PARAM name="Y">110</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT library="signal_generator.so" id="14" component="plugin">
+  <PARAM name="Amplitude (V)">1</PARAM>
+  <PARAM name="Delay (s)">1</PARAM>
+  <PARAM name="Freq (Hz)">1</PARAM>
+  <PARAM name="H">338</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="Width (s)">1</PARAM>
+  <PARAM name="X">0</PARAM>
+  <PARAM name="Y">0</PARAM>
+  <PARAM name="ZAP duration (s)">10</PARAM>
+  <PARAM name="ZAP max Freq (Hz)">20</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+</RTXI>
