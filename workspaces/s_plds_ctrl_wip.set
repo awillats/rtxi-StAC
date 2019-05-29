@@ -86,11 +86,19 @@
    <PARAM name="5 pen width">1</PARAM>
    <PARAM name="5 scale">0.2</PARAM>
    <PARAM name="5 type">2</PARAM>
+   <PARAM name="6 ID">17</PARAM>
+   <PARAM name="6 index">0</PARAM>
+   <PARAM name="6 offset">-3.5</PARAM>
+   <PARAM name="6 pen color">#2bce48</PARAM>
+   <PARAM name="6 pen style">1</PARAM>
+   <PARAM name="6 pen width">5</PARAM>
+   <PARAM name="6 scale">1</PARAM>
+   <PARAM name="6 type">2</PARAM>
    <PARAM name="DivT">1000</PARAM>
    <PARAM name="DivX">10</PARAM>
    <PARAM name="DivY">10</PARAM>
    <PARAM name="H">460</PARAM>
-   <PARAM name="Num Channels">6</PARAM>
+   <PARAM name="Num Channels">7</PARAM>
    <PARAM name="Paused">0</PARAM>
    <PARAM name="Refresh">250</PARAM>
    <PARAM name="Size">10001</PARAM>
@@ -145,12 +153,25 @@
   <PARAM name="paused">0</PARAM>
  </OBJECT>
  <OBJECT id="16" component="plugin" library="gain_mod.so">
-  <PARAM name="Bias">0</PARAM>
+  <PARAM name="Bias">1</PARAM>
   <PARAM name="Gain">1</PARAM>
   <PARAM name="H">226</PARAM>
   <PARAM name="W">294</PARAM>
   <PARAM name="X">20</PARAM>
   <PARAM name="Y">350</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+ <OBJECT id="17" component="plugin" library="signal_generator.so">
+  <PARAM name="Amplitude (V)">1</PARAM>
+  <PARAM name="Delay (s)">1</PARAM>
+  <PARAM name="Freq (Hz)">1</PARAM>
+  <PARAM name="H">338</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="Width (s)">1</PARAM>
+  <PARAM name="X">360</PARAM>
+  <PARAM name="Y">0</PARAM>
+  <PARAM name="ZAP duration (s)">10</PARAM>
+  <PARAM name="ZAP max Freq (Hz)">20</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
 </RTXI>
