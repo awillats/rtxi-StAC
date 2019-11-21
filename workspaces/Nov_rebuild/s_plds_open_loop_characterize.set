@@ -7,7 +7,11 @@
   <PARAM name="0 Destination channel">0</PARAM>
   <PARAM name="0 Source ID">13</PARAM>
   <PARAM name="0 Source channel">0</PARAM>
-  <PARAM name="Num Links">1</PARAM>
+  <PARAM name="1 Destination ID">11</PARAM>
+  <PARAM name="1 Destination channel">2</PARAM>
+  <PARAM name="1 Source ID">14</PARAM>
+  <PARAM name="1 Source channel">0</PARAM>
+  <PARAM name="Num Links">2</PARAM>
  </OBJECT>
  <OBJECT library="analogy_driver.so" component="plugin" id="2">
   <PARAM name="Num Devices">0</PARAM>
@@ -50,11 +54,19 @@
    <PARAM name="3 pen width">1</PARAM>
    <PARAM name="3 scale">1</PARAM>
    <PARAM name="3 type">2</PARAM>
+   <PARAM name="4 ID">14</PARAM>
+   <PARAM name="4 index">0</PARAM>
+   <PARAM name="4 offset">-3</PARAM>
+   <PARAM name="4 pen color">#2bce48</PARAM>
+   <PARAM name="4 pen style">1</PARAM>
+   <PARAM name="4 pen width">3</PARAM>
+   <PARAM name="4 scale">1</PARAM>
+   <PARAM name="4 type">2</PARAM>
    <PARAM name="DivT">1000</PARAM>
    <PARAM name="DivX">10</PARAM>
    <PARAM name="DivY">10</PARAM>
    <PARAM name="H">488</PARAM>
-   <PARAM name="Num Channels">4</PARAM>
+   <PARAM name="Num Channels">5</PARAM>
    <PARAM name="Paused">0</PARAM>
    <PARAM name="Refresh">250</PARAM>
    <PARAM name="Size">10001</PARAM>
@@ -86,6 +98,20 @@
   <PARAM name="Width (s)">1</PARAM>
   <PARAM name="X">32</PARAM>
   <PARAM name="Y">268</PARAM>
+  <PARAM name="ZAP duration (s)">10</PARAM>
+  <PARAM name="ZAP max Freq (Hz)">20</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+ <OBJECT library="signal_generator.so" component="plugin" id="14">
+  <PARAM name="Amplitude (V)">1</PARAM>
+  <PARAM name="Delay (s)">1</PARAM>
+  <PARAM name="Freq (Hz)">1</PARAM>
+  <PARAM name="H">338</PARAM>
+  <PARAM name="Minimized">1</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="Width (s)">2</PARAM>
+  <PARAM name="X">0</PARAM>
+  <PARAM name="Y">639</PARAM>
   <PARAM name="ZAP duration (s)">10</PARAM>
   <PARAM name="ZAP max Freq (Hz)">20</PARAM>
   <PARAM name="paused">0</PARAM>
